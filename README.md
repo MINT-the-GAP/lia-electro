@@ -293,10 +293,10 @@ als TeX gesetzt. Gängige physikalische Werte werden automatisch umgewandelt:
 
 | Eingabe | Anzeige |
 |---|---|
-| `R_1` oder `$R_1$` | \(R_1\) |
-| `220 Ω` | \(220\,\Omega\) |
-| `4,7 kΩ` | \(4{,}7\,\mathrm{k}\Omega\) |
-| `9 V` | \(9\,\mathrm{V}\) |
+| `R_1` oder `$R_1$` | $R_1$ |
+| `220 Ω` | $220\,\Omega$ |
+| `4,7 kΩ` | $4{,}7\,\mathrm{k}\Omega$ |
+| `9 V` | $9\,\mathrm{V}$ |
 
 Die Beschriftung folgt der sichtbaren Ausrichtung des Symbols: Bei
 waagerechten Bauteilen steht der Name oberhalb und der Wert unterhalb. Bei
@@ -326,8 +326,8 @@ kennzeichnet den ausgeblendeten Messwert, und `showMeasurement: false` wird im
 JSON gespeichert.
 
 Reihen- und Parallelschaltungen werden automatisch erkannt. Im
-Eigenschaftenpanel erscheinen Gesamtspannung \(U\), Ersatzwiderstand
-\(R_\mathrm{ges}\), Gesamtstrom \(I\) sowie für das gewählte Bauteil
+Eigenschaftenpanel erscheinen Gesamtspannung $U$, Ersatzwiderstand
+$R_\mathrm{ges}$, Gesamtstrom $I$ sowie für das gewählte Bauteil
 Spannung, Strom und Leistung. Die Statuszeile unterscheidet einen geschlossenen
 Stromkreis, einen offenen Stromkreis, einen Kurzschluss, fehlende Werte und
 nicht unterstützte Bauteile.
@@ -566,7 +566,7 @@ genau ein weiterer Widerstand eingesetzt und verkabelt werden, sodass `A1`
 @ElectroKabel(`electro_ergaenzen;w2;A1;b;R1;a;horizontal-first`)
 @ElectroOn(`xmin=-7;xmax=7;ymin=-5;ymax=5;width=850;id=electro_ergaenzen;snap=0.5;stub=0.35;components=[200];restrictions=[110;120;400];0;1;1`)
 
-Ergänze genau einen Widerstand so, dass das Amperemeter \(20\,\mathrm{mA}\) anzeigt.
+Ergänze genau einen Widerstand so, dass das Amperemeter $20\,\mathrm{mA}$ anzeigt.
 
 @ElectroErgaenzungsquiz(`electro_ergaenzen;condition=ammeter-current;component=A1;target=20 mA;tolerance=0.1 mA;required=[resistor:1];preserve=1;changed=1`)
 ```
@@ -581,7 +581,7 @@ Ergänze genau einen Widerstand so, dass das Amperemeter \(20\,\mathrm{mA}\) anz
 @ElectroKabel(`electro_completion_live;w2;A1;b;R1;a;horizontal-first`)
 @ElectroOn(`xmin=-7;xmax=7;ymin=-5;ymax=5;width=850;id=electro_completion_live;snap=0.5;stub=0.35;components=[200];restrictions=[110;120;400];0;1;1`)
 
-Ergänze genau einen Widerstand so, dass das Amperemeter \(20\,\mathrm{mA}\) anzeigt.
+Ergänze genau einen Widerstand so, dass das Amperemeter $20\,\mathrm{mA}$ anzeigt.
 
 @ElectroErgaenzungsquiz(`electro_completion_live;condition=ammeter-current;component=A1;target=20 mA;tolerance=0.1 mA;required=[resistor:1];preserve=1;changed=1`)
 
